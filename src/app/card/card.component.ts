@@ -33,6 +33,10 @@ export class CardComponent {
     }
   }
 
+  cancelEdit() {
+    this.editingCard = null;
+  }
+
   deleteCard(id: number) {
     this.data = this.data.filter(card => card.id !== id);
   }
